@@ -10,7 +10,7 @@ const bishkekSeconds = document.querySelector('.bishkekSeconds');
 
 
 function time(){
-    fetch("http://worldtimeapi.org/api/timezone/Asia/Bishkek")
+    fetch("https://worldtimeapi.org/api/timezone/Asia/Bishkek")
         .then(response => response.json())
         .then(data => {
         let bishkek = data['datetime']
@@ -30,7 +30,7 @@ function time(){
         console.log(error);
         });
 
-    fetch("http://worldtimeapi.org/api/timezone/Asia/Yakutsk")
+    fetch("https://worldtimeapi.org/api/timezone/Asia/Yakutsk")
         .then(response => response.json())
         .then(data => {
         let yakutskTime = data['datetime']
@@ -45,7 +45,7 @@ function time(){
         console.log(error);
         });
 
-    fetch("http://worldtimeapi.org/api/timezone/Europe/Moscow")
+    fetch("https://worldtimeapi.org/api/timezone/Europe/Moscow")
         .then(response => response.json())
         .then(data => {
         let petersburgTime = data['datetime']
